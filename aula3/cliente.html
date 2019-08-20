@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Cadastro de clientes</title>
+        <META charset="UTF-8"></META>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content=" Ramon">
+        <meta name="description" content="Cadastro de clientes">
+        <meta name="keywords" content="cliente, clientes, html, exemplo"> 
+    </head>
+    <body>
+        <div>
+        <h3>Cadastro de clientes</h3>
+        <form action="cliente.php" method="GET">
+            <label for="nomecliente">Nome:</label> 
+            <br>
+            <input name="nomecliente" type="text" size="40" maxlength="35" placeholder="Digite o nome do Cliente" required>
+            <br>
+
+            <label for="dtnasc">Data de Nascimento:</label> 
+            <br>
+            <input name="dtnasc" type="date">
+            <br>
+
+            <label for="dtnasc">E-mail:</label> 
+            <br>
+            <input name="email" type="email">
+            <br>
+
+            <label for="tel">Telefone:</label> 
+            <br>
+            <input name="tel" type="tel"  placeholder="12345-1234">
+            <br>
+
+            <label for="dtnasc">Idade:</label> 
+            <br>
+            <input name="idade" type="number" max="100" min="0">
+            <br>
+            <input name="id" type="hidden" value="555">
+            <input type="submit" name="btnsubmit" value="Enviar!">
+        </form>
+        </div>
+    </body>
+</html>
