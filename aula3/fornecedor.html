@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Cadastro de Fornecedores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content=" Ramon">
+        <meta name="description" content="Cadastro de clientes">
+        <meta name="keywords" content="cliente, clientes, html, exemplo"> 
+    </head>
+    <body>
+        <div>
+        <h3>Cadastro de Fornecedores</h3>
+        <form action="fornecedor.php" method="POST">
+            <fieldset>
+                <legend>Dados </legend>
+            <label for="nomecliente">Nome:</label> 
+            <br>
+            <input name="nomecliente" type="text" size="40" maxlength="35" placeholder="Digite o nome do Cliente" required>
+            <br>
+
+            <label for="cnpj">CNPJ:</label> 
+            <br>
+            <input name="cnpj" type="number" placeholder="000.000.000/0001-00">
+            <br>
+
+        </fieldset>
+        <fieldset>
+            <legend> Endereco</legend>
+            <label for="logradouro">Logradouro:</label> 
+            <br>
+            <input name="logradouro" type="text" size="40" maxlength="35" placeholder="Rua" required>
+            <br>
+           
+            <label for="bairro">bairro:</label> 
+            <br>
+            <input name="bairro" type="text"  placeholder="Bairro" required>
+            <br>
+            <label for="cidade">Cidade:</label> 
+            <br>
+            <input name="cidade" type="text"  placeholder="Cidade" required>
+            <br>
+            <label for="uf">UF:</label> 
+            <br>
+            <input name="uf" type="text"  placeholder="UF" maxlength="2" required>
+            <br>
+            <label for="cep">CEP:</label> 
+            <br>
+            <input name="cep" type="text"  placeholder="00.000-000" required>
+            <br>
+        </fieldset>
+            <input name="id" type="hidden" value="555">
+            <input type="submit" name="btnsubmit" value="Enviar!">
+            <input type="reset" name="btnlimpar" value= "Limpar">
+          
+        </form>
+        </div>
+    </body>
+</html>

@@ -3,6 +3,11 @@
         <title>Response </title>
     </head>
 <?php
+//ini_set('display_erros',1);
+//ini_set('display_startup_erros',1);
+//error_reporting(E_ALL);
+//Exemplo de como exibir erros de maneira profunda. TOMAR CUIDADO.
+
 $var1 = 'Cliente';
 echo "<h1> Lista de ".$var1."</h1>";
 echo  "<h1>Escrever um conteudo no HTML  do response</h1>";
@@ -19,7 +24,11 @@ echo "<b>MD5: </b>".MD5(filter_input(INPUT_POST,'senha'))."<br>";
 echo "<b>SHA1: </b>".sha1(filter_input(INPUT_POST,'senha'))."<br>"; 
 echo "<b>Tipo do Cliente: </b>".filter_input(INPUT_POST,'tipo')."<br>"; 
 echo "<b>Observacao: </b>".filter_input(INPUT_POST,'observacao')."<br>"; 
-var_dump($_FILES);
+$caminhoupload = pathinfo($_FILES);
+if(is_uploaded_file($_FILE['arq']['tmp_name'])){
+    var_dump($_FILES['arq']['tmp_name']);
+}
+var_dump($_FILES["arq"]["temp_name"]);
 //echo "<b>Arquivo: </b>".filter_input_array (INPUT_POST ,$_FILES['arq'])."<br>"; 
 echo "<b>WebPage: </b>".filter_input(INPUT_POST,'pagina')."<br>"; 
 
