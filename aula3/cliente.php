@@ -19,5 +19,9 @@ echo "<b>MD5: </b>".MD5(filter_input(INPUT_POST,'senha'))."<br>";
 echo "<b>SHA1: </b>".sha1(filter_input(INPUT_POST,'senha'))."<br>"; 
 echo "<b>Tipo do Cliente: </b>".filter_input(INPUT_POST,'tipo')."<br>"; 
 echo "<b>Observacao: </b>".filter_input(INPUT_POST,'observacao')."<br>"; 
+var_dump($_FILES);
+//echo "<b>Arquivo: </b>".filter_input_array (INPUT_POST ,$_FILES['arq'])."<br>"; 
+echo "<b>WebPage: </b>".filter_input(INPUT_POST,'pagina')."<br>"; 
+
 ?>
 </html>

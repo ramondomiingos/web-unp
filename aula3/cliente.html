@@ -38,15 +38,19 @@
             <input name="idade" type="number" max="100" min="0">
             <br>
 
-            <label for="sexo">Idade:</label> 
+            <label for="sexo">Sexo:</label> 
             <br>
-        </fieldset>
+       
             <input name="sexo" type="radio" value="Masculino">Masculino</input>
             <br>
             <input name="sexo" type="radio" value="Feminino">Feminino</input>
             <br>
+        </fieldset>
+        <fieldset>
+            <legend>Outros dados</legend>
             <label for="senha">Senha:</label> 
             <br>
+
             <input name="senha" type="password" >
             <br>
             Tipo:<select name="tipo">
@@ -55,10 +59,14 @@
                 <option value="VIP">VIP</option>
 
             </select><br>
-            Observação<textarea placeholder="Coloque suas Observações aqui" row=5 name="observacao"></textarea><br>
+            Observação: <textarea placeholder="Coloque suas Observações aqui" rows="5" cols="40" maxlength="200" name="observacao"></textarea><br>
+            Arquivo: <input name="arq" type="file" /> <br>
+            Web Page: <input name="pagina" type="url" required  >
+        </fieldset>
             <input name="id" type="hidden" value="555">
             <input type="submit" name="btnsubmit" value="Enviar!">
         </form>
+   
         </div>
     </body>
 </html>
