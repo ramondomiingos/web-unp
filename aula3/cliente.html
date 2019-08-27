@@ -11,6 +11,8 @@
         <div>
         <h3>Cadastro de clientes</h3>
         <form action="cliente.php" method="POST">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
             <label for="nomecliente">Nome:</label> 
             <br>
             <input name="nomecliente" type="text" size="40" maxlength="35" placeholder="Digite o nome do Cliente" required>
@@ -38,6 +40,7 @@
 
             <label for="sexo">Idade:</label> 
             <br>
+        </fieldset>
             <input name="sexo" type="radio" value="Masculino">Masculino</input>
             <br>
             <input name="sexo" type="radio" value="Feminino">Feminino</input>
