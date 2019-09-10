@@ -44,3 +44,16 @@ tr:hover{
 #inicial:hover #meio{
     display: block; 
 }
+
+
+ul.cidade{
+    list-style-type: upper-roman;
+}
+ul.coisas{
+    list-style-type: lower-alpha;
+}
+ul.zero{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
