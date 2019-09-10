@@ -7,3 +7,6 @@ p, h1{
 .format02{
     text-decoration: line-through;
 }
+.format03{
+    text-transform: uppercase;
+}
