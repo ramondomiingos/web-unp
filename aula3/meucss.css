@@ -10,3 +10,13 @@ p, h1{
 .format03{
     text-transform: uppercase;
 }
+.minhacor{
+    border: 2px solid tomato;
+    padding:  10px 5px 10px 40px;
+    background-color: rgba(255,97,71, 0.5);
+    color: #3c3c3c;
+    transition: 0.5s all ease  ;
+}
+.minhacor:hover{
+background-color: yellow;
+}
