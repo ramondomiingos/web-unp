@@ -1,0 +1,9 @@
+p, h1{
+    color: blue;
+}
+#format01{
+    text-decoration: underline;
+}
+.format02{
+    text-decoration: line-through;
+}
