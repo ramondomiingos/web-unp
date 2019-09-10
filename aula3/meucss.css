@@ -37,3 +37,10 @@ tr:nth-child(even){
 tr:hover{
     background-color: yellow;
 }
+
+#meio{
+    display: none;
+}
+#inicial:hover #meio{
+    display: block;
+}
