@@ -4,12 +4,18 @@
         <META charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content=" Ramon">
+        <script src="meusescripts.js"></script>
         <script>
             function esconde(nome){
                 document.getElementById(nome).style.display='none';
             }
             function mostra(nome){
                 document.getElementById(nome).style.display='block';
+            }
+            function soma(){
+                let a = document.getElementById("v1").value + document.getElementById("v2").value;
+                document.getElementById('numero').innerHTML = a;
+                
             }
             
         </script>
@@ -20,11 +26,23 @@
         <div>
             <button onclick="document.getElementById('txtexemplo').style.fontSize =  '40px'">Aumentar Fonte</button>
             <button onclick="document.getElementById('txtexemplo').style.fontSize =  '10px'">Dominuir Fonte</button>
+            <button onclick="esconde('txtexemplo')"> Esconde txtexemplo</button>
+            <button onclick="mostra('txtexemplo')"> Mostra txtexemplo</button>
         </div>
         <p id="txtnome">Meu Nome é</p>
         <button onclick="document.getElementById('txtnome').innerHTML = 'Aluno da UNP'">Nome</button>
         <button onclick="esconde('txtnome')"> Esconde Nome</button>
-        <button onclick="esconde('txtexemplo')"> Esconde txtexemplo</button>
+        
         <button onclick="mostra('txtnome')">Mostra Nome</button>
+        <h2>Calculadora</h2>
+        <div>
+            Valor 1: <input type="number" id="v1" size="5" maxlength="5" value="0"><br>
+            Valor 2: <input type="number" id="v2" size="5" maxlength="5" value="0"><br>
+            <button onclick="somar()">+</button>
+            <button onclick="adicao()">-</button>
+            <button onclick="multi()"> *</button>
+            <button onclick="div()">/</button>
+            <div id="resultado"> Resultado: <p id="numero"></p></div>
+        </div>
     </body>
 </html>
