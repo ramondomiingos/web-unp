@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content=" Ramon">
         <script>
-            function esconde(){
-                document.getElementById('txtnome').style.display='none';
+            function esconde(nome){
+                document.getElementById(nome).style.display='none';
             }
-            function mostra(){
-                document.getElementById('txtnome').style.display='block';
+            function mostra(nome){
+                document.getElementById(nome).style.display='block';
             }
             
         </script>
@@ -23,7 +23,8 @@
         </div>
         <p id="txtnome">Meu Nome é</p>
         <button onclick="document.getElementById('txtnome').innerHTML = 'Aluno da UNP'">Nome</button>
-        <button onclick="esconde()"> Esconde Nome</button>
-        <button onclick="mostra()">Mostra Nome</button>
+        <button onclick="esconde('txtnome')"> Esconde Nome</button>
+        <button onclick="esconde('txtexemplo')"> Esconde txtexemplo</button>
+        <button onclick="mostra('txtnome')">Mostra Nome</button>
     </body>
 </html>
