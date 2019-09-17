@@ -4,6 +4,15 @@
         <META charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content=" Ramon">
+        <script>
+            function esconde(){
+                document.getElementById('txtnome').style.display='none';
+            }
+            function mostra(){
+                document.getElementById('txtnome').style.display='block';
+            }
+            
+        </script>
     </head>
     <body>
         <h2>Exemplo de JavaScript</h2>
@@ -14,7 +23,7 @@
         </div>
         <p id="txtnome">Meu Nome é</p>
         <button onclick="document.getElementById('txtnome').innerHTML = 'Aluno da UNP'">Nome</button>
-        <button onclick="document.getElementById('txtnome').style.display='none'"> Esconde Nome</button>
-        <button onclick="document.getElementById('txtnome').style.display='block'">Mostra Nome</button>
+        <button onclick="esconde()"> Esconde Nome</button>
+        <button onclick="mostra()">Mostra Nome</button>
     </body>
 </html>
