@@ -62,6 +62,16 @@
               </menuitem>
         </menu>
     </menuitem>
+    <menuitem label='Cadastro'>
+        <icon>fa:file-text-o fa-fw</icon>
+        <menu>
+              
+              <menuitem label='Cliente'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>ClienteList</action>
+              </menuitem>
+        </menu>
+    </menuitem>
     
     <menuitem label='Logs'>
         <icon>fa:desktop fa-fw</icon>
