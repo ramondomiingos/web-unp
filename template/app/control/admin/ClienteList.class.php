@@ -80,11 +80,16 @@ class ClienteList extends TStandardList
         $column_id->setAction($order_id);
         
         $order_name = new TAction(array($this, 'onReload'));
-        $order_name->setParameter('order', 'name');
+        $order_name->setParameter('order', 'nome');
         $column_name->setAction($order_name);
         
+        $order_dtnascimento = new TAction(array($this, 'onReload'));
+        $order_dtnascimento->setParameter('order', 'datanascimento');
+        $column_name->setAction($order_dtnascimento);
+
+
         // create EDIT action
-        $action_edit = new TDataGridAction(array('SystemUnitForm', 'onEdit'));
+        $action_edit = new TDataGridAction(array('ClienteForm', 'onEdit'));
         $action_edit->setButtonClass('btn btn-default');
         $action_edit->setLabel(_t('Edit'));
         $action_edit->setImage('fa:pencil-square-o blue fa-lg');
