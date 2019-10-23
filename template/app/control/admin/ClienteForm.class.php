@@ -31,7 +31,7 @@ class ClienteForm extends TStandardForm
         // create the form fields
         $id = new TEntry('id');
         $nome = new TEntry('nome');
-        $dtnascimento = new TEntry('datanascimento');
+        $dtnascimento = new TDate('datanascimento');
         
         // add the fields
         $this->form->addFields( [new TLabel('Id')], [$id] );
